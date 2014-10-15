@@ -21,13 +21,11 @@ function questionREPL() { // defines function
 	} 
 	else if (userAnswerREPL != correctAnswer) {
 		console.log("Wrong answer.");
-		alert("Wrong.");
-		var tryAgainREPL = prompt("Do you want to try again? (yes or no)");
+		var tryAgainREPL = prompt("Nice Try! Do you want to try again? (yes or no)");
 	}
-	else (userAnswerREPL != correctAnswer && tryAgainREPL === "yes") 
+	else (tryAgainREPL === "yes" && userAnswerREPL != correctAnswer) 
 		var userAnswerREPL = prompt("What does REPL stand for?");
 		console.log(userAnswerREPL);
-	
 
 };
 
