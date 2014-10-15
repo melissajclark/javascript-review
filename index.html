@@ -43,6 +43,7 @@ function booleanQuestion() { // defines function
 		} else {
 			console.log("Wrong, the comparison operator for 'is equal to' is ==.");
 			alert("Wrong, the comparison operator for 'is equal to' is ==.");
+			var accumulatedPoints = accumulatedPoints - 1;
 		}
 
 	var isExactlyEqual = prompt("is exactly equal to");
@@ -53,6 +54,7 @@ function booleanQuestion() { // defines function
 			var accumulatedPoints = accumulatedPoints + 1; 
 		} else {
 			console.log("Wrong, the comparison operator for 'is exactly equal to' is ===.")
+			var accumulatedPoints = accumulatedPoints - 1;
 		}
 
 	var notEqual = prompt("is not equal to");
@@ -63,6 +65,7 @@ function booleanQuestion() { // defines function
 			var accumulatedPoints = accumulatedPoints + 1; 
 		} else {
 			console.log("Wrong, the comparison operator for 'is not equal to' is !=.")
+			var accumulatedPoints = accumulatedPoints - 1;
 		}
 
 
@@ -74,6 +77,7 @@ function booleanQuestion() { // defines function
 			var accumulatedPoints = accumulatedPoints + 1; 
 		} else {
 			console.log("Wrong, the comparison operator for 'greater than' is >.")
+			var accumulatedPoints = accumulatedPoints - 1;
 		}
 
 
@@ -96,6 +100,7 @@ function booleanQuestion() { // defines function
 			var accumulatedPoints = accumulatedPoints + 1; 
 		} else {
 			console.log("Wrong, the comparison operator for 'greater than or equal to' is >=.")
+			var accumulatedPoints = accumulatedPoints - 1;
 		}
 
 	var lessThanOrEqualTo = prompt("Less than or equal to");
@@ -106,6 +111,7 @@ function booleanQuestion() { // defines function
 			var accumulatedPoints = accumulatedPoints + 1; 
 		} else {
 			console.log("Wrong, the comparison operator for 'less than or equal to' is <=.")
+			var accumulatedPoints = accumulatedPoints - 1;
 		}
 
 		console.log("Total points: " + accumulatedPoints);
