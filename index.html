@@ -11,20 +11,27 @@
 
 <script>
 
-function questionREPL() {
+function questionREPL() { // defines function
 	var userAnswerREPL = prompt("What does REPL stand for?");
 	var correctAnswer = "read, eval, print, loop";
+
 	if (userAnswerREPL === correctAnswer) {
 		console.log("Correct!");
 		alert("That's right. God work."); 
 	} 
-	else if (userAnswerREPL != correctAnswer); {
-		// console.log("Nope, you're wrong.");
-		alert("Wrong.")
+	else if (userAnswerREPL != correctAnswer) {
+		console.log("Wrong answer.");
+		alert("Wrong.");
+		var tryAgainREPL = prompt("Do you want to try again? (yes or no)");
 	}
+	else (userAnswerREPL != correctAnswer && tryAgainREPL === "yes") 
+		var userAnswerREPL = prompt("What does REPL stand for?");
+		console.log(userAnswerREPL);
+	
+
 };
 
-questionREPL();
+questionREPL(); // calls function
 	
 
 
