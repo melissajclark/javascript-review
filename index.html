@@ -114,7 +114,40 @@ function booleanQuestion() { // defines function
 			var accumulatedPoints = accumulatedPoints - 1;
 		}
 
-		console.log("Total points: " + accumulatedPoints);
+	var andDefined = prompt("and");
+
+		if (andDefined === "&&" && andDefined != "&"){
+			console.log("Correct (and)");
+			alert("Correct!");
+			var accumulatedPoints = accumulatedPoints + 1; 
+		} else {
+			console.log("Wrong, in boolean expressions 'and' is &&.")
+			var accumulatedPoints = accumulatedPoints - 1;
+		}
+
+	var orDefined = prompt("or");
+
+		if (orDefined === "||" && orDefined != "|"){
+			console.log("Correct (or)");
+			alert("Correct!");
+			var accumulatedPoints = accumulatedPoints + 1; 
+		} else {
+			console.log("Wrong, in boolean expressions 'or' is ||.")
+			var accumulatedPoints = accumulatedPoints - 1;
+		}
+
+	var notDefined = prompt("not");
+
+		if (notDefined === "!" && notDefined != "!!"){
+			console.log("Correct (not)");
+			alert("Correct!");
+			var accumulatedPoints = accumulatedPoints + 1; 
+		} else {
+			console.log("Wrong, in boolean expressions 'not' is !.")
+			var accumulatedPoints = accumulatedPoints - 1;
+		}
+
+console.log("Total points: " + accumulatedPoints);
 
 };
 
