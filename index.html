@@ -17,15 +17,19 @@ function questionREPL() { // defines function
 
 	if (userAnswerREPL === correctAnswer) {
 		console.log("Correct!");
-		alert("That's right. God work."); 
+		alert("That's right. Good work."); 
 	} 
 	else if (userAnswerREPL != correctAnswer) {
 		console.log("Wrong answer.");
-		var tryAgainREPL = prompt("Nice Try! Do you want to try again? (yes or no)");
+		var tryAgainREPL = prompt("Wrong answer, but nice try! Do you want to try again? (yes or no)");
 	}
-	else (tryAgainREPL === "yes" && userAnswerREPL != correctAnswer) 
+	else if (tryAgainREPL === "yes") {
 		var userAnswerREPL = prompt("What does REPL stand for?");
 		console.log(userAnswerREPL);
+	}
+	else if (userAnswerREPL === correctAnswer) {
+		alert("Correct!");
+	}
 
 };
 
