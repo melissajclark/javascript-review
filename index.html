@@ -14,6 +14,7 @@
 function questionREPL() { // defines function
 		var userAnswerREPL = prompt("What does REPL stand for?");
 		var correctAnswer = "read, eval, print, loop";
+		var accumulatedPoints = 0;
 		
 		if (userAnswerREPL != correctAnswer) {
 			console.log("Wrong");
@@ -31,13 +32,74 @@ questionREPL(); // calls function
 	
 function booleanQuestion() { // defines function
 	alert("Task information: enter the code associated with the definition.");
+
 	var isEqual = prompt("is equal to");
+
+		if (isEqual === "==" && isEqual != "="){
+			console.log("Correct! (is equal)");
+			alert("Correct!");
+			
+		} else {
+			console.log("Wrong, the comparison operator for 'is equal to' is ==.");
+			alert("Wrong, the comparison operator for 'is equal to' is ==.");
+		}
+
 	var isExactlyEqual = prompt("is exactly equal to");
+
+		if (isExactlyEqual === "===" && isExactlyEqual != "==" ){
+			console.log("Correct (exactly equal)");
+			alert("Correct!"); 
+		} else {
+			console.log("Wrong, the comparison operator for 'is exactly equal to' is ===.")
+		}
+
 	var notEqual = prompt("is not equal to");
+
+		if (notEqual === "!="){
+			console.log("Correct (not equal)");
+			alert("Correct!"); 
+		} else {
+			console.log("Wrong, the comparison operator for 'is not equal to' is !=.")
+		}
+
+
 	var greaterThan = prompt("greater than");
+
+		if (greaterThan === ">" && greaterThan != ">="){
+			console.log("Correct (greater than)");
+			alert("Correct!"); 
+		} else {
+			console.log("Wrong, the comparison operator for 'greater than' is >.")
+		}
+
+
 	var lessThan = prompt("less than");
+
+		if (lessThan === "<" && lessThan != "<="){
+			console.log("Correct (less than)");
+			alert("Correct!"); 
+		} else {
+			console.log("Wrong, the comparison operator for 'less than' is <.")
+		}
+
+
 	var greaterThanorEqual = prompt("greater than or equal to");
+
+		if (greaterThanorEqual === ">=" && greaterThanorEqual != ">"){
+			console.log("Correct (greater than or equal to)");
+			alert("Correct!"); 
+		} else {
+			console.log("Wrong, the comparison operator for 'greater than or equal to' is >=.")
+		}
+
 	var lessThanOrEqualTo = prompt("Less than or equal to");
+
+		if (lessThanOrEqualTo === "<=" && lessThanOrEqualTo != "<"){
+			console.log("Correct (less than or equal to)");
+			alert("Correct!"); 
+		} else {
+			console.log("Wrong, the comparison operator for 'less than or equal to' is <=.")
+		}
 
 
 
