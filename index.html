@@ -12,13 +12,16 @@
 <script>
 
 function questionREPL() {
-	var answerREPL = prompt("What does REPL stand for?");
-	if (answerREPL === "read, eval, print, loop") {
+	var userAnswerREPL = prompt("What does REPL stand for?");
+	var correctAnswer = "read, eval, print, loop";
+	if (userAnswerREPL === correctAnswer) {
 		console.log("Correct!");
-	} else (answerREPL != "read, eval, print, loop"); {
-		console.log("Nope, you're wrong.")
+		alert("That's right. God work."); 
+	} 
+	else if (userAnswerREPL != correctAnswer); {
+		// console.log("Nope, you're wrong.");
+		alert("Wrong.")
 	}
-	
 };
 
 questionREPL();
