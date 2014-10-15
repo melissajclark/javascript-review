@@ -19,17 +19,27 @@ function questionREPL() { // defines function
 		console.log("Correct!");
 		alert("That's right. Good work."); 
 	} 
-	else if (userAnswerREPL != correctAnswer) {
-		console.log("Wrong answer.");
-		var tryAgainREPL = prompt("Wrong answer, but nice try! Do you want to try again? (yes or no)");
+	else if (userAnswerREPL != correctAnswer){
+		console.log("wrong");
+		var tryAgainREPL = prompt("Wrong answer. Try again? (yes or no)");
 	}
-	else if (tryAgainREPL === "yes") {
-		var userAnswerREPL = prompt("What does REPL stand for?");
-		console.log(userAnswerREPL);
+	else if (tryAgainREPL === "yes"){
+		prompt("What does REPL stand for?")
 	}
-	else if (userAnswerREPL === correctAnswer) {
-		alert("Correct!");
-	}
+
+
+
+	// else if (userAnswerREPL != correctAnswer) {
+	// 	console.log("Wrong answer.");
+	// 	var tryAgainREPL = prompt("Wrong answer, but nice try! Do you want to try again? (yes or no)");
+	// }
+	// else if (tryAgainREPL === "yes") {
+	// 	var userAnswerREPL = prompt("What does REPL stand for?");
+	// 	console.log(userAnswerREPL);
+	// }
+	// else if (userAnswerREPL === correctAnswer) {
+	// 	alert("Correct!");
+	// }
 
 };
 
